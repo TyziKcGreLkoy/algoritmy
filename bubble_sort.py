@@ -11,6 +11,7 @@ def bubble_sort(bubble_list):
     return bubble_list
 
 
-spisok = random_generator(10, 0, 100)
-print(spisok)
-print(bubble_sort(spisok))
+if __name__ == "__main__":
+    spisok = random_generator(10, 0, 100)
+    print(spisok)
+    print(bubble_sort(spisok))

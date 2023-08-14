@@ -9,7 +9,8 @@ def minimal_number_search(number_list):
     return minimal
 
 
-spisok = random_generator(10, 0, 100)
-print(spisok)
-print(minimal_number_search(spisok))
+if __name__ == "__main__":
+    spisok = random_generator(10, 0, 100)
+    print(spisok)
+    print(minimal_number_search(spisok))
 
