@@ -1,3 +1,6 @@
+from random_generation import random_generator
+
+
 def minimal_number_search(number_list):
     minimal = number_list[0]
     for i in number_list:
@@ -6,7 +9,7 @@ def minimal_number_search(number_list):
     return minimal
 
 
-print(minimal_number_search([79, 95, 62, 42, 97, 23, 60, 66, 84, 37, 20, 80, 63, 82, ]))
-
-
+spisok = random_generator(10, 0, 100)
+print(spisok)
+print(minimal_number_search(spisok))
 

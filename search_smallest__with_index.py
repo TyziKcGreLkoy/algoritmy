@@ -1,10 +1,14 @@
+from random_generation import random_generator
+
+
 def minimal_number_search(number_list):
     maximum = number_list[0]
-    for i in range(len(number_list)):
-        if number_list[i] > maximum:
-            maximum = number_list[i]
+    for k in range(len(number_list)):
+        if number_list[k] > maximum:
+            maximum = number_list[k]
     return maximum
 
 
-print(minimal_number_search([79, 95, 62, 42, 97, 23, 60, 66, 84, 37, 20, 80, 63, 82]))
-
+spisok = random_generator(10, 0, 100)
+print(spisok)
+print(minimal_number_search(spisok))
