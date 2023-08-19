@@ -1,4 +1,6 @@
 from random_generation import random_generator
+
+
 def amount(num):
     if num == []:
         return 0
